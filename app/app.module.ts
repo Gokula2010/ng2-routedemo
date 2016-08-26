@@ -5,18 +5,25 @@ import { AppComponent }  from './app.component';
 
 import { routing, appRoutingProviders  } from './app.routing';
 
-import { HeroListComponent } from './components/heroes/hero-list.component';
+
+import { HeroesModule } from './components/heroes/heroes.module';
+
+import { CrisisCenterModule } from './components/crisis-center/crisis-center.module';
+
 import { CrisisListComponent } from './components/crisis-center/crisis-list.component';
+
+
 
 @NgModule({
   imports: [ 
     BrowserModule,
-    routing 
+    routing,
+    HeroesModule,
+    CrisisCenterModule
   ],
   declarations: [ 
-    AppComponent,
-    HeroListComponent,
-    CrisisListComponent
+    AppComponent
+    //CrisisListComponent
   ],
   providers: [
     appRoutingProviders
