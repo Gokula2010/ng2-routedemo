@@ -13,7 +13,7 @@ export class AuthGuardService implements CanActivate {
 
     }
 
-   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot ) {
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot ) {
         if(this._authService.isLoggedIn) {
             return true;
         }

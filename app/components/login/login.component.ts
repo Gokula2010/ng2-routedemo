@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
     ngOnInit() { }
 
-    login() {
+    onLogin() {
         this._authService.login().subscribe(() =>{
             if(this._authService.isLoggedIn) {
                 let redirect = this._authService.redirectUrl ? this._authService.redirectUrl : '/heroes';
@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         })
     }
 
-    logout() {
+    onLogout() {
         this._authService.logout();
     }
 

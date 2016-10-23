@@ -12,6 +12,6 @@ import { heroesRouting } from './heroes.routing';
         HeroListComponent,
         HeroDetailComponent
     ],
-    providers: [],
+    providers: []
 })
 export class HeroesModule { }
